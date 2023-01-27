@@ -17,35 +17,23 @@ function change(){
           Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
               item.style.display = 'block';
               item.style.opacity = 1;
-
+              fading();
 
           });
        });
-
-
        fading();
-
-
-
     }
     // actual filtering
     else {
       chekboxInputs.forEach(function(input){
           // finding results for each checkbox option
           Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
-
             item.style.display = input.checked ? 'block' : 'none';
             item.style.opacity = input.checked ? 1 : 0;
-
-
+            fading();
           });
-
        });
-
        fading();
-
-
-
     }
 }
 // re-filter function init
