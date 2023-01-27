@@ -18,12 +18,6 @@ function change(){
               let myVarGuide;
               myVarGuide = setTimeout(display, 50);
               item.style.display = 'block';
-
-              function display(){
-                  item.style.opacity = '1';
-                  item.style.transition = '500ms';
-              }
-
               item.style.opacity = 1;
 
 
