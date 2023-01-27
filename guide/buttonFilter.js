@@ -15,7 +15,7 @@ function change(){
     if(allAreUnselected){
        chekboxInputs.forEach(function(input){
           Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
-              item.style.display = 'block';
+              item.style.display = 'grid';
               item.style.opacity = 1;
               fading();
 
@@ -28,7 +28,7 @@ function change(){
       chekboxInputs.forEach(function(input){
           // finding results for each checkbox option
           Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
-            item.style.display = input.checked ? 'block' : 'none';
+            item.style.display = input.checked ? 'grid' : 'none';
             item.style.opacity = input.checked ? 1 : 0;
             fading();
           });
